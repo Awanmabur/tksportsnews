@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sports News & Radio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<section>
+
+  <!-- TOP NAV -->
+  <div class="top-nav">
+    <div class="logo">SPORTS NEWS</div>
+
+    <!-- PC nav links -->
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Matches</a>
+      <a href="#">News</a>
+      <a href="#">Features</a>
+      <a href="#">Radio</a>
+    </div>
+
+    <!-- Search Section -->
+    <div class="search-icon">
+      <div class="search-input" id="searchInput">
+        <input type="text" placeholder="Search..." />
+      </div>
+      <svg onclick="toggleSearch()" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.5 4.5a7.5 7.5 0 0012.15 12.15z"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#">Home</a>
+    <a href="#">Matches</a>
+    <a href="#">News</a>
+    <a href="#">Features</a>
+    <a href="#">Radio</a>
+  </div>
+
+  <!-- BOTTOM NAV -->
+  <div class="bottom-nav" id="bottomNav">
+    <div class="nav-item">
+      <svg fill="currentColor" viewBox="0 0 24 24">
+        <path d="M3 9.75L12 3l9 6.75V20a1 1 0 01-1 1h-5.25a.75.75 0 01-.75-.75v-5.5a.75.75 0 00-.75-.75h-3.5a.75.75 0 00-.75.75v5.5a.75.75 0 01-.75.75H4a1 1 0 01-1-1V9.75z"/>
+      </svg>
+      <span>Home</span>
+    </div>
+
+    <div class="nav-item">
+      <svg fill="currentColor" viewBox="0 0 24 24">
+        <path d="M8 7V3m8 4V3m-9 4h10a2 2 0 012 2v10a2 2 0 01-2 2H7a2 2 0 01-2-2V9a2 2 0 012-2z"/>
+      </svg>
+      <span>Events</span>
+    </div>
+
+    <div class="nav-item radio">
+      <svg fill="currentColor" viewBox="0 0 24 24">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+    </div>
+
+    <div class="nav-item">
+      <svg fill="currentColor" viewBox="0 0 24 24">
+        <path d="M19 3H5a2 2 0 00-2 2v14l4-4h12a2 2 0 002-2V5a2 2 0 00-2-2z"/>
+      </svg>
+      <span>Latest</span>
+    </div>
+
+    <!-- Hamburger -->
+    <div class="nav-item" onclick="toggleMenu()">
+      <svg viewBox="0 0 100 80" width="22" height="22">
+        <rect width="100" height="15"></rect>
+        <rect y="30" width="100" height="15"></rect>
+        <rect y="60" width="100" height="15"></rect>
+      </svg>
+      <span>Menu</span>
+    </div>
+  </div>
+
+
+</section>
+
+
+
+
+
+
+   <div class="container">
+
+     <div>
+
+      <section>
+
+       <div class="featured">
+
+        <div class="slider-container">
+
+         <div class="slides">
+
+          <div class="slide">
+            <img src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Exciting Match">
+            <div class="caption">
+              <h2>Exciting Match Ends in Dramatic Fashion</h2>
+              <p>Team scores stoppage-time goal to secure victory • 2h ago</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Celebration">
+            <div class="caption">
+              <h2>Historic Win for Underdogs</h2>
+              <p>Unbelievable comeback stuns fans worldwide • 3h ago</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Stadium">
+            <div class="caption">
+              <h2>Stadium Lights Up with Victory</h2>
+              <p>New stadium hosts its first major victory • 4h ago</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="controls">
+          <span class="prev">❮</span>
+          <span class="next">❯</span>
+        </div>
+
+        <div class="indicators">
+          <span class="dot active-dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+      </div>
+
+   </div>
+
+
+  </section>
+
+
+
+ <section>
+
+   <div class="stats">
+       <div class="stat-item">
+           <div class="stat-label">Years</div>
+       </div>
+       <div class="stat-item">
+           <div class="stat-label">Skills</div>
+       </div>
+       <div class="stat-item">
+           <div class="stat-label">Tools</div>
+       </div>
+       <div class="stat-item">
+           <div class="stat-label">Languages</div>
+       </div>
+       <div class="stat-item">
+           <div class="stat-label">Projects</div>
+       </div>
+   </div>
+
+ </section>
+
+
+
+
+
+
+    <div class="articles">
+
+      <div class="article-card">
+        <img src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Coach">
+        <p>Manager continues their unbeaten streak</p>
+        <small>4h ago</small>
+      </div>
+
+      <div class="article-card">
+        <img src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Celebration">
+        <p>Player's brace leads team to important win</p>
+        <small>8h ago</small>
+      </div>
+
+      <div class="article-card">
+        <img src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Goalkeeper">
+        <p>Top goalkeeper makes crucial saves in draw</p>
+        <small>8h ago</small>
+      </div>
+
+    </div>
+
+
+
+
+
+
+<section>
+
+    <div class="latest-news">
+
+      <h3>Latest News</h3>
+
+      <!-- Player news -->
+      <div class="news-card">
+          <img src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Football player" class="news-image">
+          <div class="news-content">
+              <div class="news-title">PLAYER'S BRACE LEADS TEAM TO IMPORTANT WIN</div>
+              <div class="news-excerpt">Star striker scores twice to secure crucial three points.</div>
+              <div class="news-time"><i class="far fa-clock"></i> 8h ago</div>
+          </div>
+      </div>
+
+      <!-- Goalkeeper news -->
+      <div class="news-card">
+          <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=693&q=80" alt="Goalkeeper" class="news-image">
+          <div class="news-content">
+              <div class="news-title">TOP GOALKEEPER MAKES CRUCIAL SAVES IN DRAW</div>
+              <div class="news-excerpt">Keeper's heroics earn team a valuable point on the road.</div>
+              <div class="news-time"><i class="far fa-clock"></i> 8h ago</div>
+          </div>
+      </div>
+
+      <!-- Contract extension -->
+      <div class="news-card">
+          <img src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Player signing" class="news-image">
+          <div class="news-content">
+              <div class="news-title">STAR FORWARD SECURES CONTRACT EXTENSION</div>
+              <div class="news-excerpt">Club's top scorer signs new long-term deal.</div>
+              <div class="news-time"><i class="far fa-clock"></i> 1h ago</div>
+          </div>
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
+  </div>
+
+
+
+
+
+
+    <section>
+
+      <div class="sidebar">
+
+        <div class="live-radio">
+
+          <div class="radio-box">
+           <div class="play-icon"></div>
+           <div class="radio-title">LIVE RADIO</div>
+           <div class="on-air">ON AIR</div>
+         </div>
+                <!--
+          <h3>LIVE RADIO</h3>
+          <button class="live-button">ON AIR</button> -->
+
+
+        <div class="upcoming-matches">
+
+          <h3>Upcoming Matches</h3>
+
+          <div class="match">
+            <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg" alt="Chelsea">
+            <p>Chelsea</p>
+            <h4>vs</h4>
+            <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg" alt="Chelsea">
+            <p>Real Madrid</p>
+          </div>
+
+          <div class="match">
+            <img src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Real Madrid">
+            <p>Man City</p>
+            <h4>vs</h4>
+            <img src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Real Madrid">
+            <p>Bayern</p>
+          </div>
+
+          <div class="match">
+            <img src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Inter Milan">
+            <p>Inter Milan</p>
+            <h4>vs</h4>
+            <img src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Inter Milan">
+            <p>AC Milan</p>
+          </div>
+
+        </div>
+
+
+        <div class="live-radio-card">
+
+          <h3 class="section-title">LIVE RADIO</h3>
+
+          <div class="radio-item">
+            <img src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Player 1">
+            <div class="radio-content">
+              <h class="title">Star forward secures contract extension</p>
+              <span class="time">1h 4go</span>
+            </div>
+          </div>
+
+          <div class="radio-item">
+            <img src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Player 2">
+            <div class="radio-content">
+              <p class="title">Young talent glunes in team's dominant victory</p>
+              <span class="time">3h ago</span>
+            </div>
+          </div>
+
+          <div class="radio-item">
+            <img src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Player 3">
+            <div class="radio-content">
+              <p class="title">Club announces plans for new stadium renovations</p>
+              <span class="time">5h ago</span>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+    </section>
+
+
+
+
+
+  <footer>
+    &copy; 2025 Sports News. All rights reserved.
+  </footer>
+
+
+
+  <script>
+
+
+    const slides = document.querySelector('.slides');
+    const slide = document.querySelectorAll('.slide');
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+    const dots = document.querySelectorAll('.dot');
+
+    let index = 0;
+
+    function updateSlider() {
+      slides.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach(dot => dot.classList.remove('active-dot'));
+      dots[index].classList.add('active-dot');
+    }
+
+    next.addEventListener('click', () => {
+      index = (index + 1) % slide.length;
+      updateSlider();
+    });
+
+    prev.addEventListener('click', () => {
+      index = (index - 1 + slide.length) % slide.length;
+      updateSlider();
+    });
+
+    dots.forEach((dot, dotIndex) => {
+      dot.addEventListener('click', () => {
+        index = dotIndex;
+        updateSlider();
+      });
+    });
+
+    setInterval(() => {
+      index = (index + 1) % slide.length;
+      updateSlider();
+    }, 5000);
+
+
+
+
+
+    function toggleMenu() {
+      document.getElementById("mobileMenu").classList.toggle("active");
+    }
+
+    function toggleSearch() {
+      const input = document.getElementById("searchInput");
+      const isVisible = input.style.display === "block";
+      input.style.display = isVisible ? "none" : "block";
+      if (!isVisible) {
+        setTimeout(() => input.querySelector("input").focus(), 100);
+      }
+    }
+
+    let lastScroll = 0;
+    const bottomNav = document.getElementById("bottomNav");
+
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.scrollY;
+      if (currentScroll > lastScroll) {
+        bottomNav.classList.add("hide");
+      } else {
+        bottomNav.classList.remove("hide");
+      }
+      lastScroll = currentScroll;
+    });
+
+
+  </script>
+</body>
+</html>
